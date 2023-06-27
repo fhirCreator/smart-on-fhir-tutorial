@@ -31,6 +31,8 @@
           var fname = '';
           var lname = '';
 
+          console.table(patient.name[0]);
+          console.log(`type of family: ${typeof patient.name[0].family}`);
           if (typeof patient.name[0] !== 'undefined') {
             fname = typeof patient.name[0].given !== 'undefined' ? patient.name[0].given.join(' '): '';
             lname = typeof patient.name[0].family !== 'undefined' ? patient.name[0].family.join(' '): '';
