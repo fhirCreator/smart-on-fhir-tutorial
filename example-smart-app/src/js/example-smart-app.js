@@ -37,7 +37,7 @@
             fname = typeof patient.name[0].given !== 'undefined' ? patient.name[0].given.join(' '): '';
             // lname = typeof patient.name[0].family !== 'undefined' ? patient.name[0].family.join(' '): '';
             if(typeof patient.name[0].family !== 'undefined') {
-              if(Array.isArray(patient.name[0].family) {
+              if(Array.isArray(patient.name[0].family)) {
                 fname = patient.name[0].family.join(' ');
               } else if(typeof patient.name[0].family === 'string') {
                 fname = patient.name[0].family
