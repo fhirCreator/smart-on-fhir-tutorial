@@ -38,9 +38,9 @@
             // lname = typeof patient.name[0].family !== 'undefined' ? patient.name[0].family.join(' '): '';
             if(typeof patient.name[0].family !== 'undefined') {
               if(Array.isArray(patient.name[0].family)) {
-                fname = patient.name[0].family.join(' ');
+                lname = patient.name[0].family.join(' ');
               } else if(typeof patient.name[0].family === 'string') {
-                fname = patient.name[0].family
+                lname = patient.name[0].family
               }
             }
           }
